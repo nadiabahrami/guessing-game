@@ -89,6 +89,21 @@ do{
   }
 }while(response5 !==answer5);
 
+var answer6 = ['dog','fish','bird','rabbit', 'mammal'];
+var check;
+var response6 = prompt("What was a type of animal that Nadia had as a pet?").toLowerCase();
+for(i=0; i<answer6.length; i++){
+  if(answer6[i]===response6 || answer6[i]+'s'===response6){
+    alert("Yes Nadia had a "+response6+" for a pet!");
+    check = true;
+    break;
+  }else{
+    check = false;
+  }
+};
+if(check===false){
+  alert("No, Nadia did not have a "+response6+" for a pet.");
+}
 
 alert(user+" you got "+tracker+"/4 of the 'yes or no' questions correct.");
 alert("Wasn't that fun? Feel free to read more about Nadia on this page.  Otherwise have a good day!");
