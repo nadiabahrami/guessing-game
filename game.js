@@ -72,22 +72,23 @@ while(n===3){
   alert("You gave the response "+response4+".");
 }
 
-while(n===4){
-  var response5 = prompt("Nadia is interested in compettetive swiming?").toLowerCase();
-  var answer5 = "no";
-  if(answer5===response5 || response5==='n'){
-    alert("Congrats "+user+"! That is correct. Nadia is interested in soccer, not compettetive swiming.");
-    tracker++;
-    n++;
-  }else if(response5==="yes" || response5 ==='y'){
-    alert("Sorry "+user+". That is incorrect. Nadia is interested in soccer, not compettetive swiming.");
-    n++;
+  var response5 = prompt("What is Nadia's age?");
+  var answer5 = 29;
+do{
+  response5 = parseInt(response5);
+  if(answer5>response5 && typeof response5 === 'number'){
+    alert("Sorry "+user+"! You said " + response5+". That is too low.");
+    var response5 = prompt("Guess again!");
+  }else if(answer5<response5 && typeof response5 ==='number'){
+    alert("Sorry "+user+"! You said " + response5+". That is too high.");
+    var response5 = prompt("Guess again!");
+  }else if(response5===answer5 && typeof response5==='number'){
+    alert("Correct!  Nadia's age is "+answer5+". You put "+response5+".");
   }else{
-    alert("That response isn't recognized.  Please try again using 'yes' or 'no'.")
+    var response5 = prompt("Your response isn't recognized.  Please guess again using a number.");
   }
-  console.log(user+" gave the response "+response5+". The actual answer is "+ answer5);
-  alert("You gave the response "+response5+".");
-}
+}while(response5 !==answer5);
 
-alert(user+" you got "+tracker+"/5 questions correct.");
+
+alert(user+" you got "+tracker+"/4 of the 'yes or no' questions correct.");
 alert("Wasn't that fun? Feel free to read more about Nadia on this page.  Otherwise have a good day!");
