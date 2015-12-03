@@ -10,3 +10,11 @@ Guessing Game plays a game with the user about the author Nadia.  There will be 
 
 #Sources
     * https://en.wikipedia.org/wiki/Markdown - To learn how to write a read me
+
+
+#joke
+  How do you keep a skunk from smelling?
+
+  You hold it's nose!
+
+  Hardy-hardy-har!
