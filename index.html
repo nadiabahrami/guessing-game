@@ -2,28 +2,41 @@
   <html>
     <head>
       <title>Guessing Game</title>
+      <link type = "text/css" rel="stylesheet" href="style.css" >
     </head>
     <body>
       <h1>Guessing Game about Nadia</h1>
       <p> This page is scripted to play a guessing game about Nadia. You will be asked to identify yourself and then will be asked three questions about Nadia.  It will let you know how you did and the correct answers.</p>
+      <h2>Was Nadia born in Seattle?</h2>
+      <h3 id = "pass1"></h3>
+      <h2>Did Nadia study molecular biology in college?</h2>
+      <h3 id = "pass2"></h3>
+      <h2>Is Nadia really into D.C. comics?</h2>
+      <h3 id = "pass3"></h3>
+      <h2>Did Nadia dress as She-Hulk for Halloween?</h2>
+      <h3 id = "pass4"></h3>
+      <h2>What is Nadia's age?</h2>
+      <h3 id = "pass5"></h3>
+      <h2>What was a type of animal Nadia had as a pet?</h2>
+      <h3 id = "pass6"></h3>
+
       <h2>How does it work?</h2>
       <p>Using java script the site will first prompt the user for their name as an input.  It stores that as a variable known as 'user'. The variable will log the user's input to the console for the developer to know and greet the user with their name(the stored user variable) and initiates the game using an alert.</p>
-      <p>The questions are completed in a series of prompts from the user followed by alerts on whether their responses are correct.   This is done by creating a variable known as 'tracker' and intially set to 0. The tracker value is logged to the console initially and after each question for error checking. Each question is handled as follows:</p>
+      <p>The questions are completed in a series of prompts to the user followed by printing a line that will either be red or green depending on whether their responses are correct.   It wil also tell the user how many they got right or wrong.  This is done by creating a variable known as 'tracker' and intially set to 0 that increases with every correct answer. Each yes/no question is handled as follows:</p>
       <ol>
         <li> Prompt user for answer of question, converts it to all lowercase, and stores it as a response variable</li>
-        <li> Logs user response variable to console</li>
+        <li> Logs user response to console</li>
         <li> Logs answer variable to console</li>
         <li> Using 'if/else' statements it checks to see if the answer variable and response variable match</li>
         <li><ol>
-          <li>If they are equal to each other it increases the tracking variable by 1 and alerts the user that their response is correct.</li>
-          <li>If they do not equal each other it moves to the else statement and alerts the user that their response is incorrect.</li>
+          <li>If they are equal to each other it increases the tracking variable by 1 and displays to the user that their response is correct.</li>
+          <li>If they do not equal each other it moves to the else statement and displays to the user that their response is incorrect.</li>
         </ol></li>
-        <li> Logs the tracker variable to the console to make sure it advances for correct answers and remains the same for incorrect</li>
       </ol>
       <p>Each question has new answer and response variables in order(1,2,3).</p>
       <p>From here Benton told me I am writing too much, so the final area gives an alert using the tracker detailing how many they got right.  A series of if else statements are used to check for if the variables don't match and alerts the user to correct answers</p>
       <br></br>
-      <p>Link to <a href="about.html">About Nadia<a></p>
+      <p>Link to <a href="about.html">About Nadia</a></p>
       <script src= "game.js"></script>
-    </body>
+    </body><a>
   </html>
