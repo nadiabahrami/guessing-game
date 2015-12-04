@@ -6,3 +6,13 @@ h1 {
 body {
   background-color: #E5FFf0;
 }
+
+.wrong {
+  color:red;
+}
+.right {
+  color:green;
+}
+.why {
+  color:orange;
+}
